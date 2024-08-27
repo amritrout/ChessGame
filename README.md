@@ -45,10 +45,12 @@ For the 2Player version, repeat step 3 on another device or browser window.
 
 ## Demo
 -**ChessGame 1Player**
-<video src='https://www.youtube.com/watch?v=2VAKpT2BIps' width=180/>
+[![Watch the video](https://img.youtube.com/vi/_2VAKpT2BIps/0.jpg)](https://www.youtube.com/watch?v=_2VAKpT2BIps)
 
 -**ChessGame 2Player**
-<video src='https://www.youtube.com/b1Lc07bxJwY' width=180/>
+
+[![Watch the video](https://img.youtube.com/vi/_b1Lc07bxJwY/0.jpg)](https://www.youtube.com/watch?v=_b1Lc07bxJwY)
+
 ## Troubleshooting
 
 If you encounter any issues while running the game, try the following:
