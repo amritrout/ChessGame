@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game Pro Max</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="game-container">
+    <div id="waitingMessage" class="Waiting">
+        <div class="waiting-content">
+            <p>Waiting for another player...</p>
+        </div>
+    </div>
+    <div id="turn-indicator">Player A's Turn</div>
+    <div id="timer-container">
+        <span id="timer">00:00</span>
+    </div>
+    <div class="initializer">
+        <button id="initialize-heroes">Initialize Heroes</button>
+        <button id="start-game">Start Game</button>
+        <button id="reset-board">Reset</button>
+    </div>
+    <h1>Chess Game Pro Max</h1>
+    <div id="game-board"></div>
+    <div id="controls">
+        <input type="text" id="move-input" placeholder="Enter your move (e.g., A-P1:L)">
+        <button id="send-move">Send Move</button>
+    </div>
+    <div id="messages"></div>
+    <div id="history-container">
+        <div id="move-history">
+            <h3>Move History</h3>
+        </div>
+    </div>
+    <div id="hero-popup" class="popup hidden">
+        <div class="popup-content">
+            <h2>Select a Hero</h2>
+            <div id="hero-options">
+                <!-- Will Show hero Popup -->
+            </div>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+    <div id="instructions-container">
+        <h2>Game Instructions</h2>
+        <p>1. Each player starts with any Combination of pieces with upto 5 pieces</p>
+        <p>2. Pieces can move according to their type:</p>
+        <ul>
+            <li><strong>Hero1</strong>: Moves Forward, Backward, Left, or Right.</li>
+            <li><strong>Hero2</strong>: Moves Diagonally (Forward-Left, Forward-Right, Backward-Left, Backward-Right).</li>
+            <li><strong>Pawn</strong>: Moves Forward, Backward, Left, or Right.</li>
+            <li><strong>Hero3</strong>: Moves in an L-shape (2 steps in one direction and 1 step
+                perpendicular to that direction). Specifically, Hero3 can move in the following directions: Forward-Left,
+                Forward-Right, Backward-Left, Backward-Right, Right-Forward, Right-Backward, Left-Forward, Left-Backward.</li>
+        </ul>
+        <p>3. To initialize the game:</p>
+        <ol>
+            <li>When the board is empty, press the "Initialize Heroes" button.</li>
+            <li>Player A's pieces can be placed in the 0th row, and Player B's pieces can be placed in the 4th row.</li>
+            <li>To place a piece, click on a cell in the corresponding row and select the character you want to initialize.</li>
+            <li>After placing the pieces, press on Start Game to begin.</li>
+        </ol>
+        <p>4. To move a piece, select it and then choose a move option.</p>
+        <p>5. The game ends when all pieces of one side are eliminated.</p>
+    </div>
+    <div id="move-options" class="hidden"></div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
