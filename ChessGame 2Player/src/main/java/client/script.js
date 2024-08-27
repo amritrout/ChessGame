@@ -5,7 +5,7 @@ const heroPopup = document.getElementById('hero-popup');
 const heroOptions = document.getElementById('hero-options');
 const closePopupButton = document.getElementById('close-popup');
 let currentCell = null;
-let initializeMode = false; //if initialize heroes is disabled
+let initializeMode = true; //if initialize heroes is disabled
 let timerInterval;
 let gameStarted = false;
 let currentPlayer = 'A';
@@ -28,7 +28,14 @@ ws.onmessage = function(event) {
             WaitingMsg(false);
             console.log("Both players are connected. Starting the game... "+ playerCount);
         }
-    }  else {
+    } else if(message === "gamestarted"){
+        startTimer();
+        initializeMode=false;
+    }else if(message === "resetSuccessfull"){
+        stopTimer();
+        initializeMode=true;
+    }
+    else {
         const boardState = event.data;
         updateBoard(boardState);
     }
@@ -47,6 +54,7 @@ document.getElementById('start-game').addEventListener('click', function() {
     initializeMode = false;
     gameStarted=true;
     startTimer();
+    ws.send('gamestarted');
     console.log("Game started.");
 });
 
