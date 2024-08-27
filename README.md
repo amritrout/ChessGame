@@ -103,7 +103,7 @@ For the 2Player version, repeat step 3 on another device or browser window.
 
 </details>
 
-## Edge Cases Handling
+### Edge Cases Handling
 
 <details>
 <summary>Click to expand</summary>
@@ -116,7 +116,7 @@ For the 2Player version, repeat step 3 on another device or browser window.
 
 </details>
 
-## Game Flow
+### Game Flow
 
 <details>
 <summary>Click to expand</summary>
