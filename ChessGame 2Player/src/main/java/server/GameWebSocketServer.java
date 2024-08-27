@@ -62,6 +62,7 @@ public class GameWebSocketServer extends WebSocketServer {
     @Override
     public void onMessage(WebSocket conn, String message) {
         System.out.println("Received message: " + message);
+        Collection<WebSocket> clients = this.getConnections();
 
         //if message InitHero it means we are tying to place a character
         if (message.startsWith("InitHero:")) {
@@ -88,7 +89,14 @@ public class GameWebSocketServer extends WebSocketServer {
                 gameController.getGameBoard().placeCharacter(new Pawn(player+"P"+((player.equals("A-"))?pawnA++:pawnB++), x, y), x, y);
             }
         } else if(message.equals("reset")){
+            for (WebSocket client : clients) {
+                client.send("resetSuccessfull");
+            }
             resetBoard();
+        } else if(message.equals("gamestarted")){
+            for (WebSocket client : clients) {
+                client.send("gamestarted");
+            }
         }
         else {
             gameController.processMove(message);
