@@ -7,6 +7,9 @@ This repository contains two versions of a Chess game: 1 Player and 2 Player. Bo
 - ChessGame 1Player (Two players on one screen)
 - ChessGame 2Player (Two players on separate screens)
 
+## Important Note
+To run the ChessGame 2Player version, you need to open two instances of the HTML file. This can be done either in two different tabs of the same browser or in two separate browsers because it requires 2 players to start the game.
+
 ## How to Run
 
 Follow these steps to run either version of the Chess game:
@@ -39,11 +42,30 @@ For the 2Player version, repeat step 3 on another device or browser window.
 
 - Java Development Kit (JDK)
 - Maven
-- Web browser
+
+## Demo
+-**ChessGame 1Player**
+<video src='https://www.youtube.com/watch?v=2VAKpT2BIps' width=180/>
+
+-**ChessGame 2Player**
+<video src='https://www.youtube.com/b1Lc07bxJwY' width=180/>
+## Troubleshooting
+
+If you encounter any issues while running the game, try the following:
+
+1. If the chess grid is not visible:
+   - On Windows, press Ctrl + F5 to perform a hard refresh and clear the browser cache
+   - On Mac, press Cmd + Shift + R to perform a hard refresh
+   - Alternatively, open the browser's developer tools (usually F12), go to the Network tab, and check "Disable cache" before reloading the page
+
+2. If the game doesn't connect to the server:
+   - Ensure that the `GameWebSocketServer.java` is running
+   - Check your firewall settings to make sure it's not blocking the connection
+
+3. If you see any JavaScript errors:
+   - Open the browser's developer tools (usually F12) and check the Console tab for error messages
 
 ## Additional Information
 
 - The backend is written in Java
-- The frontend uses HTML, CSS, and JavaScript (handleClient)
-
-For more detailed information about each version, please refer to the README files within the respective project folders.
+- The frontend uses HTML, CSS, and JavaScript (Client)
