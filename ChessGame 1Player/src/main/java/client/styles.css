@@ -1,14 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
+       font-family: Arial, sans-serif;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       height: 100vh;
+       margin: 0;
+       padding: 20px;
+       background-color: #f4f4f4;
+   }
 
 #game-container {
     display: flex;
@@ -61,26 +61,23 @@ body {
 }
 
 #move-history {
-    position: fixed; /* Fixed positioning */
-    left: 0; /* Align to the left side */
-    top: 20px; /* Adjust top margin if needed */
-    width: 300px; /* Fixed width */
-    height: 800px; /* Fixed height */
-    border: 1px solid #ccc; /* Border */
-    padding: 10px; /* Padding inside the box */
-    background-color: #fff; /* Background color */
-    overflow-y: auto; /* Vertical scrollbar for overflow content */
-    overflow-x: hidden; /* Hide horizontal scrollbar, if not needed */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+    position: fixed;
+    left: 0;
+    top: 20px;
+    width: 300px;
+    height: 800px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 #messages {
     margin-top: 20px;
     color: red;
 }
-
-
 
 .grid-cell {
     width: 50px;
@@ -89,22 +86,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer; /* Show a pointer cursor on hover */
+    cursor: pointer;
     background-color: #f9f9f9;
 }
 
 .grid-cell:hover {
-    background-color: #e0e0e0; /* Highlight on hover */
+    background-color: #e0e0e0;
 }
 
-/* Popup styles */
 .popup {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,34 +133,34 @@ body {
 .initializer {
     display: flex;
     margin-top: 50px;
-    justify-content: center; /* Centers buttons horizontally */
-    gap: 10px; /* Adds space between buttons */
+    justify-content: center;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
 .initializer button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
+    background-color: #4CAF50;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    white-space: nowrap; /* Ensures the text doesn't wrap */
+    white-space: nowrap;
     transition: background-color 0.3s, transform 0.2s;
 }
 
 .initializer button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049;
     transform: scale(1.05);
 }
 
 #move-options {
     margin-top: 15px;
     display: flex;
-    gap: 10px; /* Space between buttons */
+    gap: 10px;
     justify-content: center;
-    flex-wrap: wrap; /* Wrap buttons if they overflow */
+    flex-wrap: wrap;
 }
 
 #move-options button {
@@ -180,27 +176,27 @@ body {
 
 #move-options button:hover {
     background-color: #45a049;
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    transform: scale(1.05);
 }
 
 .highlight {
-    background-color: yellow !important; /* Or another highlight color */
-    border: 2px solid black !important; /* Optional, to make it more visible */
+    background-color: yellow !important;
+    border: 2px solid black !important;
 }
 
 #instructions-container {
-    position: fixed; /* Fixed positioning to keep it in place */
-    right: 20px; /* Distance from the right edge */
-    top: 20px; /* Distance from the top edge */
-    width: 300px; /* Width of the instructions box */
-    padding: 15px; /* Padding inside the box */
-    background-color: #fff; /* Background color */
-    border: 1px solid #ddd; /* Border color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
-    z-index: 1000; /* Ensure it appears above other elements */
-    overflow-y: auto; /* Scroll if the content overflows */
-    height: 800px; /* Fixed height with scrollbar if needed */
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 300px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+    height: 800px;
 }
 
 #instructions-container h2 {
@@ -221,8 +217,6 @@ body {
 #timer {
     font-family: 'Courier New', Courier, monospace;
 }
-
-/* Add this to your styles.css file */
 
 .winPopup {
     position: fixed;
@@ -259,7 +253,3 @@ body {
 #close-win-popup:hover {
     background: #0056b3;
 }
-
-
-
-
