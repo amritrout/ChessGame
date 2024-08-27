@@ -22,8 +22,13 @@ Follow these steps to run either version of the Chess game:
 3. Launch the client:
    - Navigate to `ChessGame 1Player/src/main/java/client`
    - Open `index.html` in a web browser
+   - If the above doesn't work:
+     - Locate the `index.html` file in your file system
+     - Double Click on it to Run Or
+     - Copy the full file path
+     - Paste the path into your web browser's address bar Ex-`file:///C:/Users/Amrit%20Rout/Desktop/AmritRout-21BEC0294-main/ChessGame%201Player/src/main/java/client/index.html`
 
-For the 2Player version, repeat step 3 on another device or browser window to connect the second player.
+For the 2Player version, repeat step 3 on another device or browser window.
 
 ## Game Modes
 
