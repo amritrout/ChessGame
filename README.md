@@ -42,6 +42,7 @@ For the 2Player version, repeat step 3 on another device or browser window.
 ## Requirements
 - Java Development Kit (JDK)
 - Maven
+- IDE (e.g., IntelliJ IDEA, Eclipse)
 
 ## Demo
 -**ChessGame 1Player**
